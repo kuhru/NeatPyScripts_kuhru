@@ -13,4 +13,4 @@ Primarily a code for finding duplicate filenames in different directories/paths.
 
 Immensely useful if you use pixiv, yande.re, danbooru etc very actively and have a rigid naming system, but don’t exactly have enough mental memory to keep over 1000s of images in mind such that you’re not repeat downloading an image.
 
-runtime of over 10000 files without any duplicates is sub 1 second, so i do believe its sufficiently fast, that
+Runtime of over 10000 files without any duplicates is sub 1 second, so I do believe its sufficiently fast and efficient.
