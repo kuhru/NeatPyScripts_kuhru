@@ -23,7 +23,7 @@ for r, d, f in os.walk(location):
         if ct == 36:
             # making sure not more than 36 images are opened at once by the program
             # ct decides how many images are opened.
-            print("\nNumber of Files Already Processed: " + str(cur) +" \nFiles Remaining to be Processed: " + (str(len(f) - cur)))
+            print("\nNumber of Files Already Processed: " + str(cur) +"\nFiles Remaining to be Processed: " + (str(len(f) - cur)))
             whatnow = str(input("Press 1 to continue\nPress 2 to stop execution\n"))
             if whatnow == '1' or whatnow == '':
                 ct = 0
