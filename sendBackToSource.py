@@ -7,7 +7,7 @@ lfile = []
 for r, d, f in os.walk(lox):
     for file in f:
         lfile.append(file)
-print(len(lfile))
+# print(len(lfile))
 c = 0
 for x in range(len(lfile)):
     try:
@@ -18,4 +18,4 @@ for x in range(len(lfile)):
         print("Failed to move: " + nname + " to " + nloc)
     else:
         c = c + 1
-print("Successfully moved " + c + " files")
+print("Successfully moved " + str(c) + " files")
