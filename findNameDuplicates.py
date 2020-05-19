@@ -86,19 +86,20 @@ def tally():
     """
     for x in range(len(locfile)):
         if locfile[x] in repfileloc:
-            break
+            continue
             # if the file already exists in the replacement list, then immediately break
-        chk = len(repfileloc)
-        # useful to make sure that the next loop actually added anything to the replacement list
-        for y in range(x + 1, len(locfile)):
-            if lfile[x] == lfile[y]:
-                repfileloc.append(locfile[y])
-            elif lfile[x] != lfile[y]:
-                # as soon as the filenames are different, it just breaks
-                break
-        if len(repfileloc) > chk and locfile[x] not in repfileloc:
-            # hence if files were added, then obviously the one which was being used to compare to rest is also required in the list.
-            repfileloc.append(locfile[x])
+        else:
+            chk = len(repfileloc)
+            # useful to make sure that the next loop actually added anything to the replacement list
+            for y in range(x + 1, len(locfile)):
+                if lfile[x] == lfile[y]:
+                    repfileloc.append(locfile[y])
+                elif lfile[x] != lfile[y]:
+                    # as soon as the filenames are different, it just breaks
+                    break
+            if len(repfileloc) > chk and locfile[x] not in repfileloc:
+                # hence if files were added, then obviously the one which was being used to compare to rest is also required in the list.
+                repfileloc.append(locfile[x])
 
 
 counter("C:\\Users\\userNameWowie\\Desktop\\welop")
