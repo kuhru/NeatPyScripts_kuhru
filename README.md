@@ -17,8 +17,7 @@ Immensely useful if you use pixiv, yande.re, danbooru etc. very actively and hav
 
 Runtime of over 10000 files without any duplicates is sub 1 second, so I do believe its sufficiently fast and efficient.
 
-!! Make sure, you edit the variable 'lox' and the parameter of 'Counter' is correct for your usecase !!
-!! Use it with sendBackToSource.py !!
+#### !! Make sure, you edit the variable 'lox' and the parameter of 'Counter' is correct for your usecase. Use it with sendBackToSource.py !!
 
 ## About sendBackToSource:
 Primarily used in conjunction with findNameDuplicates.py. After running that script, files will be transfered to your desired directory 'lox', and after that to send them back to where they came from, this script is quick and handy. 
